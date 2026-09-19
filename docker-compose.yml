@@ -1,0 +1,7 @@
+services:
+  wb-ai-manager:
+    build: .
+    env_file: .env
+    restart: unless-stopped
+    volumes:
+      - ./data:/app/data
